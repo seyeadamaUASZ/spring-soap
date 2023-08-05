@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.webservicesoap.org/birthday"
+  xmlns:tns="http://www.webservicesoap.org/birthday"
+  elementFormDefault="qualified">
+
+  <xs:element name="employeeRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string" />
+        <xs:element name="firstname" type="xs:string" />
+        <xs:element name="poste" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string" />
+        <xs:element name="firstname" type="xs:string" />
+        <xs:element name="poste" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
